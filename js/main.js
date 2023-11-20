@@ -51,6 +51,11 @@ const team = document.querySelector(".team")
 for(let i = 0; i < arrayTeam.length;i++ ){
     const membri = document.createElement("div")
     membri.className = "membri"
+    //Stampo foto
+    const foto = document.createElement("img")
+    foto.className = "foto"
+    foto.src = `img/${arrayTeam[i].foto}`
+    membri.append(foto);
     //Stampo nome
     const nome = document.createElement("h2")
     nome.className = "nome"
@@ -63,11 +68,7 @@ for(let i = 0; i < arrayTeam.length;i++ ){
     ruolo.textContent = `${arrayTeam[i].ruolo}`
     membri.append(ruolo);
 
-    //Stampo foto
-    const foto = document.createElement("img")
-    foto.className = "foto"
-    foto.src = `img/${arrayTeam[i].foto}`
-    membri.append(foto);
+    
     
     //Appendo il tutto al contenitore
     team.append(membri)

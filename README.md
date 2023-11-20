@@ -25,3 +25,11 @@ Organizzare i singoli membri in card/schede
 2. Stampare in console le informazioni
 
 3. Nell Html stampiamo le stesse informazioni 
+
+## Bonus 1
+
+1. Nel ciclo for, usiamo la proprietà ".src" e ".alt" 
+
+## Bonus 2 
+
+1. Aggiungiamo un file CSS e con Flexbox creiamo una griglia, e stilizziamo.

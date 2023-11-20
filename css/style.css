@@ -1,0 +1,39 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common */
+img {
+    width: 100%;
+}
+
+body{
+    text-align: center;
+    color: grey;
+}
+
+header{
+    margin: 40px 0;
+}
+
+header h1{
+    margin-bottom: 20px;
+}
+
+.contenitore {
+    margin: 0 auto;
+    width: 1000px;
+    line-height: 25px;
+}
+/* Card */
+.team {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.membri{
+    width: calc((100% / 3) - 30px);
+    margin-bottom: 30px;
+}
