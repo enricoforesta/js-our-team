@@ -59,7 +59,7 @@ for(let i = 0; i < arrayTeam.length;i++ ){
     ruolo.textContent = `${arrayTeam[i].ruolo}`
     team.append(ruolo);
     //Stampo foto
-    const foto = document.createElement("p")
-    foto.textContent = `${arrayTeam[i].foto}`
+    const foto = document.createElement("img")
+    foto.src = `img/${arrayTeam[i].foto}`
     team.append(foto);
 };
