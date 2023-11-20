@@ -1,7 +1,5 @@
 "use strict"
-
 // Array di oggetti 
-
 const arrayTeam =[
     {
         nome : "Wayne Barnett",
@@ -34,8 +32,6 @@ const arrayTeam =[
         foto : "barbara-ramos-graphic-designer.jpg",
     },
 ]
-
-
 console.log(arrayTeam)
 
 // Stampa in console
@@ -43,9 +39,7 @@ for(let i = 0; i < arrayTeam.length;i++ ){
     console.log(arrayTeam[i])
 };
 
-
 //Stampa sul DOM
-
 const team = document.querySelector(".team")
 
 for(let i = 0; i < arrayTeam.length;i++ ){
@@ -56,6 +50,7 @@ for(let i = 0; i < arrayTeam.length;i++ ){
     foto.className = "foto"
     foto.src = `img/${arrayTeam[i].foto}`
     membri.append(foto);
+
     //Stampo nome
     const nome = document.createElement("h2")
     nome.className = "nome"
@@ -66,10 +61,8 @@ for(let i = 0; i < arrayTeam.length;i++ ){
     const ruolo = document.createElement("h4")
     ruolo.className = "ruolo"
     ruolo.textContent = `${arrayTeam[i].ruolo}`
-    membri.append(ruolo);
+    membri.append(ruolo)
 
-    
-    
     //Appendo il tutto al contenitore
     team.append(membri)
 };
