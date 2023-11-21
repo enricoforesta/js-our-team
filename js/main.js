@@ -1,48 +1,57 @@
 "use strict"
 // Array di oggetti 
-const arrayTeam =[
+const arrayTeam = [
     {
-        nome : "Wayne Barnett",
-        ruolo : "Founder & CEO",
-        foto : "wayne-barnett-founder-ceo.jpg",
+        nome: "Wayne Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg",
     },
     {
-        nome : "Angela Caroll",
-        ruolo : "Chief Editor",
-        foto : "angela-caroll-chief-editor.jpg",
+        nome: "Angela Caroll",
+        ruolo: "Chief Editor",
+        foto: "angela-caroll-chief-editor.jpg",
     },
     {
-        nome : "Walter Gordon",
-        ruolo : "Office Manager",
-        foto : "walter-gordon-office-manager.jpg",
+        nome: "Walter Gordon",
+        ruolo: "Office Manager",
+        foto: "walter-gordon-office-manager.jpg",
     },
     {
-        nome : "Angela Lopez",
-        ruolo : "Social Media Manager",
-        foto : "angela-lopez-social-media-manager.jpg",
+        nome: "Angela Lopez",
+        ruolo: "Social Media Manager",
+        foto: "angela-lopez-social-media-manager.jpg",
     },
     {
-        nome : "Scott Estrada",
-        ruolo : "Developer",
-        foto : "scott-estrada-developer.jpg",
+        nome: "Scott Estrada",
+        ruolo: "Developer",
+        foto: "scott-estrada-developer.jpg",
     },
     {
-        nome : "Barbara Ramos",
-        ruolo : "Graphic Designer",
-        foto : "barbara-ramos-graphic-designer.jpg",
+        nome: "Barbara Ramos",
+        ruolo: "Graphic Designer",
+        foto: "barbara-ramos-graphic-designer.jpg",
     },
 ]
 console.log(arrayTeam)
 
 // Stampa in console
-for(let i = 0; i < arrayTeam.length;i++ ){
-    console.log(arrayTeam[i])
+const arrayTeamLength = arrayTeam.length;
+for (let i = 0; i < arrayTeamLength; i++) {
+    const persona = arrayTeam[i]
+    console.log(`Membro ${i + 1}`)
+
+    for (let key in persona) {
+        console.log(`${key}: ${persona[key]} `)
+    }
+    
+    if(!(i === arrayTeamLength - 1))
+    console.log("------")
 };
 
 //Stampa sul DOM
 const team = document.querySelector(".team")
 
-for(let i = 0; i < arrayTeam.length;i++ ){
+for (let i = 0; i < arrayTeamLength; i++) {
     const membri = document.createElement("div")
     membri.className = "membri"
     //Stampo foto
